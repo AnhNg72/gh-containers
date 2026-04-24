@@ -15,7 +15,7 @@ jobs:
       image: node:20 #put job into container
     env:
       MONGODB_CONNECTION_PROTOCOL: mongodb #mongodb+srv
-      MONGODB_CLUSTER_ADDRESS: localhost #cluster0.ntrwp.mongodb.net
+      MONGODB_CLUSTER_ADDRESS: mongodb #cluster0.ntrwp.mongodb.net
       MONGODB_USERNAME: ${{ secrets.MONGODB_USERNAME }}
       MONGODB_PASSWORD: ${{ secrets.MONGODB_PASSWORD }}
       PORT: 8080
